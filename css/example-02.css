@@ -1,0 +1,4 @@
+@charset "utf-8";
+.wrapper article:nth-child(n+4){
+    background-color: skyblue;
+} 
