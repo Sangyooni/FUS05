@@ -90,6 +90,7 @@ body {
     left: 0;
     border-radius: 10px;
     cursor: pointer;
+    transition: 200ms;
   }
   .menubar-top {
     top: 0;
@@ -113,6 +114,7 @@ body {
   .menubar-act.menubar-bottom{
     transform: translateY(-50%) rotate(-45deg);
     top: 50%;
+  }
   .menu {
     background-color: rgba(0, 0, 0, 0.85);
     position: fixed;
@@ -138,6 +140,9 @@ body {
     margin: 0 auto;
   }
   /* 모바일 메뉴 */
+  .btn-wrapper{
+    display: none;
+  }
   .menu {
     display: flex;
     justify-content: space-around;
@@ -167,6 +172,9 @@ body {
     width: 20%;
   }
   /* 데스크탑 메뉴 */
+  .btn-wrapper{
+    display: none;
+  }
   .menu {
     grid-area: menu;
     display: flex;
