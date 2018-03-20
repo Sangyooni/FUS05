@@ -95,7 +95,7 @@ body {
   .menubar-top {
     top: 0;
   }
-  .menubar-act.menubar-top{
+  .menubar-act.menubar-top {
     top: 50%;
     transform: translateY(-50%) rotate(45deg);
   }
@@ -103,15 +103,14 @@ body {
     top: 50%;
     transform: translateY(-50%);
   }
-  .menubar-act.menubar-middle{
+  .menubar-act.menubar-middle {
     transform: translate(-100%, -50%);
-
   }
   .menubar-bottom {
     top: 100%;
     transform: translateY(-100%);
   }
-  .menubar-act.menubar-bottom{
+  .menubar-act.menubar-bottom {
     transform: translateY(-50%) rotate(-45deg);
     top: 50%;
   }
@@ -131,6 +130,10 @@ body {
   .menu-act {
     transform: translateX(0);
   }
+  .main .box{
+    min-height: 100px;
+    margin: 1em;
+  }
 }
 /*  모바일 라지 디바이스 */
 @media screen and (min-width: 551px) and (max-width: 999px) {
@@ -140,7 +143,7 @@ body {
     margin: 0 auto;
   }
   /* 모바일 메뉴 */
-  .btn-wrapper{
+  .btn-wrapper {
     display: none;
   }
   .menu {
@@ -151,6 +154,18 @@ body {
     display: block;
     padding: 1em;
     text-transform: uppercase;
+  }
+  /* 모바일 디바이스 메인 */
+  .main{
+    overflow: hidden;
+  }
+  .box{
+    float: left;
+    width: 45%;
+    height: 150px;
+    margin :1em 2.5%;
+  }
+  .box1{
   }
 }
 /*  데스크탑 디바이스 */
@@ -172,7 +187,7 @@ body {
     width: 20%;
   }
   /* 데스크탑 메뉴 */
-  .btn-wrapper{
+  .btn-wrapper {
     display: none;
   }
   .menu {
@@ -190,9 +205,19 @@ body {
   .menu li:first-child a::before {
     content: "";
   }
+  /* 데스크탑 메인 */
   .main {
-    height: 50vh;
+    display: grid;
+    grid-template-areas: "box box box box";
+    grid-auto-columns: 20%;
+    grid-auto-rows: 150px;
+    justify-content: space-between;
+    grid-row-gap: 20px;
+    padding: 2em;
   }
+  .main .box {
+  }
+  /* 데스크탑 푸터 */
   .footer {
     height: 50vh;
   }
