@@ -1,3 +1,11 @@
-.bg-light{
-    background: silver !important;
+.bg-light {
+  background: silver !important;
 }
+
+.card {
+  margin: 0 auto;
+  width: 80%;
+}
+/* .row .col:nth-child(odd) .card{
+    background-color:pink;
+} */
